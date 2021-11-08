@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+}
+
+.container > div {
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div:hover {
+    transform: scale(1.1);
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+.lien1 {
+    background-color: lightblue;
+}
+
+.lien2 {
+    background-color: deepskyblue;
+}
+
+.lien3 {
+    background-color: purple;
+}
+
+.lien4 {
+    background-color: orange;
+}
+
+.lien5 {
+    background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .item {
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+}
